@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projetos - JORALU</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .project-card {
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: var(--shadow-md);
+            aspect-ratio: 4/3;
+            background-color: #ddd;
+            /* Placeholder */
+        }
+
+        .project-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .project-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            padding: 1.5rem;
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+            color: white;
+            transform: translateY(100%);
+            transition: transform 0.3s ease;
+        }
+
+        .project-card:hover .project-overlay {
+            transform: translateY(0);
+        }
+
+        .project-card:hover img {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container navbar">
+            <a href="index.html" class="logo">
+                <img src="content/joralu.png" alt="JORALU Lda">
+            </a>
+            <nav>
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="index.html" class="nav-link" data-i18n="nav.home">Início</a></li>
+                    <li class="nav-item"><a href="materials.html" class="nav-link"
+                            data-i18n="nav.materials">Materiais</a></li>
+                    <li class="nav-item"><a href="projects.html" class="nav-link active"
+                            data-i18n="nav.projects">Projetos</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link" data-i18n="nav.about">A Empresa</a></li>
+                    <li class="nav-item"><a href="blog.html" class="nav-link" data-i18n="nav.blog">Blog</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link" data-i18n="nav.contact">Contactos</a>
+                    </li>
+                    <li class="nav-item">
+                        <div class="lang-toggle">
+                            <button class="lang-btn active" data-lang="pt">PT</button>
+                            <button class="lang-btn" data-lang="fr">FR</button>
+                        </div>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-header section-padding" style="background-color: var(--color-bg-alt);">
+        <div class="container text-center">
+            <h1 data-i18n="projects.title">Projetos Realizados</h1>
+            <p data-i18n="projects.subtitle">Explore o nosso portfólio de obras e instalações.</p>
+        </div>
+    </section>
+
+    <section class="section-padding">
+        <div class="container">
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <!-- Placeholder Image -->
+                    <div
+                        style="width:100%; height:100%; background:#ccc; display:flex; align-items:center; justify-content:center;">
+                        IMG 1</div>
+                    <div class="project-overlay">
+                        <h3 data-i18n="projects.p1_title">Moradia Moderna</h3>
+                        <p data-i18n="projects.p1_desc">Instalação completa de caixilharia em alumínio.</p>
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <div
+                        style="width:100%; height:100%; background:#bbb; display:flex; align-items:center; justify-content:center;">
+                        IMG 2</div>
+                    <div class="project-overlay">
+                        <h3 data-i18n="projects.p2_title">Edifício Comercial</h3>
+                        <p data-i18n="projects.p2_desc">Fachada em vidro e alumínio.</p>
+                    </div>
+                </div>
+                <!-- Project 3 -->
+                <div class="project-card">
+                    <div
+                        style="width:100%; height:100%; background:#aaa; display:flex; align-items:center; justify-content:center;">
+                        IMG 3</div>
+                    <div class="project-overlay">
+                        <h3 data-i18n="projects.p3_title">Renovação Residencial</h3>
+                        <p data-i18n="projects.p3_desc">Substituição de janelas PVC.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3 data-i18n="footer.about_title">Sobre a JORALU</h3>
+                    <p data-i18n="footer.about_text">Líderes na indústria de caixilharias.</p>
+                </div>
+                <div class="footer-col">
+                    <h3 data-i18n="footer.links_title">Links Rápidos</h3>
+                    <ul class="footer-links">
+                        <li><a href="materials.html" data-i18n="nav.materials">Materiais</a></li>
+                        <li><a href="projects.html" data-i18n="nav.projects">Projetos</a></li>
+                        <li><a href="contact.html" data-i18n="nav.contact">Contactos</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3 data-i18n="footer.contact_title">Contactos</h3>
+                    <ul class="footer-links">
+                        <li>info@joralu.eu</li>
+                        <li>+351 123 456 789</li>
+                        <li>Zona Industrial, Portugal</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p data-i18n="footer.rights">© 2024 JORALU. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/translations.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

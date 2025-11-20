@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactos - JORALU</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+        }
+
+        @media (max-width: 768px) {
+            .contact-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid var(--color-border);
+            border-radius: 4px;
+            font-family: inherit;
+        }
+
+        .map-container {
+            background-color: #eee;
+            height: 100%;
+            min-height: 400px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #888;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container navbar">
+            <a href="index.html" class="logo">
+                <img src="content/joralu.png" alt="JORALU Lda">
+            </a>
+            <nav>
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="index.html" class="nav-link" data-i18n="nav.home">Início</a></li>
+                    <li class="nav-item"><a href="materials.html" class="nav-link"
+                            data-i18n="nav.materials">Materiais</a></li>
+                    <li class="nav-item"><a href="projects.html" class="nav-link" data-i18n="nav.projects">Projetos</a>
+                    </li>
+                    <li class="nav-item"><a href="about.html" class="nav-link" data-i18n="nav.about">A Empresa</a></li>
+                    <li class="nav-item"><a href="blog.html" class="nav-link" data-i18n="nav.blog">Blog</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link active"
+                            data-i18n="nav.contact">Contactos</a></li>
+                    <li class="nav-item">
+                        <div class="lang-toggle">
+                            <button class="lang-btn active" data-lang="pt">PT</button>
+                            <button class="lang-btn" data-lang="fr">FR</button>
+                        </div>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-header section-padding" style="background-color: var(--color-bg-alt);">
+        <div class="container text-center">
+            <h1 data-i18n="contact.title">Fale Connosco</h1>
+            <p data-i18n="contact.subtitle">Estamos prontos para ajudar no seu próximo projeto.</p>
+        </div>
+    </section>
+
+    <section class="section-padding">
+        <div class="container">
+            <div class="contact-grid">
+
+                <!-- Contact Form -->
+                <div class="contact-form">
+                    <form>
+                        <div class="form-group">
+                            <label data-i18n="contact.name">Nome</label>
+                            <input type="text" class="form-control" placeholder="">
+                        </div>
+                        <div class="form-group">
+                            <label data-i18n="contact.email">Email</label>
+                            <input type="email" class="form-control" placeholder="">
+                        </div>
+                        <div class="form-group">
+                            <label data-i18n="contact.message">Mensagem</label>
+                            <textarea class="form-control" rows="5"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" data-i18n="contact.send">Enviar Mensagem</button>
+                    </form>
+                </div>
+
+                <!-- Map / Info -->
+                <div class="contact-info">
+                    <div class="map-container">
+                        <!-- Placeholder for Google Maps -->
+                        Mapa (Google Maps Embed)
+                    </div>
+                    <div style="margin-top: 2rem;">
+                        <h3 style="margin-bottom: 1rem;">JORALU Lda</h3>
+                        <p>Zona Industrial, Lote 123</p>
+                        <p>1234-567 Portugal</p>
+                        <p style="margin-top: 1rem;"><strong>Tel:</strong> +351 123 456 789</p>
+                        <p><strong>Email:</strong> info@joralu.eu</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3 data-i18n="footer.about_title">Sobre a JORALU</h3>
+                    <p data-i18n="footer.about_text">Líderes na indústria de caixilharias.</p>
+                </div>
+                <div class="footer-col">
+                    <h3 data-i18n="footer.links_title">Links Rápidos</h3>
+                    <ul class="footer-links">
+                        <li><a href="materials.html" data-i18n="nav.materials">Materiais</a></li>
+                        <li><a href="projects.html" data-i18n="nav.projects">Projetos</a></li>
+                        <li><a href="contact.html" data-i18n="nav.contact">Contactos</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3 data-i18n="footer.contact_title">Contactos</h3>
+                    <ul class="footer-links">
+                        <li>info@joralu.eu</li>
+                        <li>+351 123 456 789</li>
+                        <li>Zona Industrial, Portugal</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p data-i18n="footer.rights">© 2024 JORALU. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/translations.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

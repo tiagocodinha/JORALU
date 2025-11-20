@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Empresa - JORALU</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container navbar">
+            <a href="index.html" class="logo">
+                <img src="content/joralu.png" alt="JORALU Lda">
+            </a>
+            <nav>
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="index.html" class="nav-link" data-i18n="nav.home">Início</a></li>
+                    <li class="nav-item"><a href="materials.html" class="nav-link"
+                            data-i18n="nav.materials">Materiais</a></li>
+                    <li class="nav-item"><a href="projects.html" class="nav-link" data-i18n="nav.projects">Projetos</a>
+                    </li>
+                    <li class="nav-item"><a href="about.html" class="nav-link active" data-i18n="nav.about">A
+                            Empresa</a></li>
+                    <li class="nav-item"><a href="blog.html" class="nav-link" data-i18n="nav.blog">Blog</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link" data-i18n="nav.contact">Contactos</a>
+                    </li>
+                    <li class="nav-item">
+                        <div class="lang-toggle">
+                            <button class="lang-btn active" data-lang="pt">PT</button>
+                            <button class="lang-btn" data-lang="fr">FR</button>
+                        </div>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-header section-padding" style="background-color: var(--color-bg-alt);">
+        <div class="container text-center">
+            <h1 data-i18n="about.title">Sobre a JORALU</h1>
+            <p data-i18n="about.subtitle">Tradição e inovação ao serviço do seu conforto.</p>
+        </div>
+    </section>
+
+    <section class="section-padding">
+        <div class="container">
+            <div style="max-width: 800px; margin: 0 auto;">
+                <h2 data-i18n="about.history_title">A Nossa História</h2>
+                <p data-i18n="about.history_text" style="margin-bottom: 2rem;">
+                    Fundada com o objetivo de fornecer soluções de alta qualidade em caixilharia, a JORALU tem vindo a
+                    crescer e a modernizar-se, acompanhando as tendências do mercado e as necessidades dos nossos
+                    clientes.
+                </p>
+
+                <h2 data-i18n="about.mission_title">Missão e Valores</h2>
+                <p data-i18n="about.mission_text">
+                    A nossa missão é garantir o conforto e a eficiência energética das habitações dos nossos clientes,
+                    através de produtos duráveis e esteticamente agradáveis. Valorizamos a qualidade, a transparência e
+                    o compromisso com os prazos.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3 data-i18n="footer.about_title">Sobre a JORALU</h3>
+                    <p data-i18n="footer.about_text">Líderes na indústria de caixilharias.</p>
+                </div>
+                <div class="footer-col">
+                    <h3 data-i18n="footer.links_title">Links Rápidos</h3>
+                    <ul class="footer-links">
+                        <li><a href="materials.html" data-i18n="nav.materials">Materiais</a></li>
+                        <li><a href="projects.html" data-i18n="nav.projects">Projetos</a></li>
+                        <li><a href="contact.html" data-i18n="nav.contact">Contactos</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3 data-i18n="footer.contact_title">Contactos</h3>
+                    <ul class="footer-links">
+                        <li>info@joralu.eu</li>
+                        <li>+351 123 456 789</li>
+                        <li>Zona Industrial, Portugal</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p data-i18n="footer.rights">© 2024 JORALU. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/translations.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
